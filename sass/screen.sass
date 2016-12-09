@@ -1,0 +1,109 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+@import "compass/reset"
+
+@font-face
+  font-family: RobotoB
+  src: url(../static/fonts/RobotoBold.ttf)
+
+
+@font-face
+  font-family: RobotoL
+  src: url(../static/fonts/RobotoLight.ttf)
+
+
+@font-face
+  font-family: RobotoM
+  src: url(../static/fonts/RobotoMedium.ttf)
+
+$orange: #f4b642
+$fiolet: #6848a8
+$blue: #DDE3FF
+.photo-player
+  width: 75px
+  height: 75px
+
+.card-player
+  display: flex
+  flex-direction: row
+  font-family: RobotoL
+  font-size: 18px
+  padding: 10px
+  border: 3px solid $fiolet
+  background: $blue
+
+.info-player
+  padding-left: 20px
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+
+.info-player span
+  display: block
+
+.money-player
+  display: flex
+
+.card-bet
+  margin-top: 20px
+  font-family: RobotoL
+  font-size: 18px
+  padding: 0
+  border: 3px solid $fiolet
+
+.card-bet .title
+  display: block
+  background: $blue
+  text-align: center
+  font-family: RobotoM
+  font-size: 22px
+  padding-top: 15px
+  height: 50px
+
+.sum-card
+  padding: 10px
+
+
+.choose-bet .bet-amount
+  display: block
+  padding: 5px
+  text-align: center
+  font-family: RobotoM
+  font-size: 22px
+  background: $blue
+  border: 1px solid $fiolet
+  width: 80px
+  cursor: pointer
+  transition: 0.2s
+  &:hover
+    background: $fiolet
+    color: $orange
+  &:focus
+    background: #000
+
+.choose-bet
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin: 10px 0
+
+.f-row
+  display: flex
+.s-row
+  display: flex
+
+.form-inline
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.myinput
+  width: 200px
+
+.input-group
+  width: 80%
+  margin-left: 10%

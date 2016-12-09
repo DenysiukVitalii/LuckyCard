@@ -23,6 +23,7 @@
 }
 #header {
   padding: 20px 0;
+  padding-bottom: 30px;
 }
 
 .brand {
@@ -36,7 +37,8 @@
   position: absolute;
   top: 90%;
   left: 20px;
-  color: #176aef;
+  color: #6848a8;
+  margin-top: 10px;
 }
 #mobmenu {
   display: none;
@@ -56,30 +58,22 @@
   box-sizing: border-box;
   border-bottom: 1px solid #ccc;
   margin-left: -.36em;
-  transition: .3s;
-}
-#menu > li:last-child{
-  border: none;
-}
-#menu > li:last-child a{
-  padding-left:30px;
-}
-#menu > li:last-child:hover{
-  border: none;
-}
-#menu > li:last-child:hover i{
-  border: none;
-  color: #f4b642;
+  transition: .2s;
 }
 #menu > li:hover {
   border-bottom: 1px solid #f4b642;
 }
+#menu > li:hover a{
+  transform: translateY(-2px);
+}
 #menu li a {
   display: block;
   text-decoration: none;
-  padding: 5px 40px;
-  color: #000;
-  transition: .3s;
+  padding: 5px 30px;
+  padding-bottom: 10px;
+  color: #6848a8;
+  transition: .2s;
+  font-family: RobotoL;
 }
 
 #menu i {
@@ -96,18 +90,37 @@
 @media screen and (max-width: 992px){
     #menu {
       display: none;
+      float: none;
+      position: absolute;
+      top: 25px;
+      left: 0;
+      width: 100%;
+      z-index: 3;
+      background: #fff;
+    }
+    #menu > li {
+      display: block;
+    }
+    #menu > li a {
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    #menu > li:hover {
+      background: #f4b642;
+    }
+    #menu > li:hover a{
+      transform: none;
     }
     #mobmenu {
       display: block;
+      position: absolute;
+      top: 0;
+      right: 10%;
+      transform: translateY(-100%);
     }
 
 }
 @media screen and (max-width: 768px){
-    #menu {
-      display: none;
-    }
-    #mobmenu {
-      display: block;
-    }
 
 }

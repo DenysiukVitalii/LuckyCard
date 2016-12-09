@@ -1,0 +1,173 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: RobotoB;
+  src: url(../static/fonts/RobotoBold.ttf);
+}
+@font-face {
+  font-family: RobotoL;
+  src: url(../static/fonts/RobotoLight.ttf);
+}
+@font-face {
+  font-family: RobotoM;
+  src: url(../static/fonts/RobotoMedium.ttf);
+}
+.photo-player {
+  width: 75px;
+  height: 75px;
+}
+
+.card-player {
+  display: flex;
+  flex-direction: row;
+  font-family: RobotoL;
+  font-size: 18px;
+  padding: 10px;
+  border: 3px solid #6848a8;
+  background: #DDE3FF;
+}
+
+.info-player {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.info-player span {
+  display: block;
+}
+
+.money-player {
+  display: flex;
+}
+
+.card-bet {
+  margin-top: 20px;
+  font-family: RobotoL;
+  font-size: 18px;
+  padding: 0;
+  border: 3px solid #6848a8;
+}
+
+.card-bet .title {
+  display: block;
+  background: #DDE3FF;
+  text-align: center;
+  font-family: RobotoM;
+  font-size: 22px;
+  padding-top: 15px;
+  height: 50px;
+}
+
+.sum-card {
+  padding: 10px;
+}
+
+.choose-bet .bet-amount {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  font-family: RobotoM;
+  font-size: 22px;
+  background: #DDE3FF;
+  border: 1px solid #6848a8;
+  width: 80px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.choose-bet .bet-amount:hover {
+  background: #6848a8;
+  color: #f4b642;
+}
+.choose-bet .bet-amount:focus {
+  background: #000;
+}
+
+.choose-bet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.f-row {
+  display: flex;
+}
+
+.s-row {
+  display: flex;
+}
+
+.form-inline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.myinput {
+  width: 200px;
+}
+
+.input-group {
+  width: 80%;
+  margin-left: 10%;
+}
