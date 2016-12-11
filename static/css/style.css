@@ -81,9 +81,42 @@
   transition: .3s;
 }
 
+#footer {
+  position: relative;
+  background: #B8CCE4;
+  padding: 15px 0;
+  height: 70px;
+}
+.links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10px;
+}
+#footer .res {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-45%);
+  font-family: RobotoL;
+}
+.links a {
+  color: #1F497D;
+  font-family: RobotoL;
+}
+
+.links li {
+  display: inline-block;
+}
+.links li:first-child{
+  border-right: 1px solid #1F497D;
+  padding-right: 10px;
+  margin-right: 5px;
+}
+
 @media screen and (min-width: 992px) and (max-width:1130px) {
   #menu li a {
-    padding: 5px 30px;
+    padding: 5px 17px;
   }
 }
 
@@ -121,6 +154,83 @@
     }
 
 }
-@media screen and (max-width: 768px){
 
+@media screen and (max-width: 992px){
+  #main {
+    margin: 0 20px;
+  }
+  #main .col-md-9 {
+    padding: 0 !important;
+  }
+  .brand {
+    font-size: 40px;
+  }
+  .slogan {
+    font-size: 14px;
+  }
+  .my-main-table {
+    padding: 20px;
+    margin: 20px 0 !important;
+  }
+  .my-main-table .col-md-2 {
+    padding: 0 !important;
+  }
+  #r-card-2 {
+  }
+  .coloda-time {
+    margin: 0 !important;
+  }
+  .random-card {
+    margin: 20px 0 !important;
+  }
+  .diller {
+    bottom: auto !important;
+    left: auto !important;
+    top: 30%;
+    right: -110px;
+  }
+  .win {
+    left: auto !important;
+    top: 44% !important;
+    right: -85px !important;
+  }
+  .coef {
+    left: auto !important;
+    top: 54% !important;
+    right: -65px !important;
+  }
+
+  .battle {
+    display: none;
+  }
+
+  #r-card-1 .coef-battle {
+    display: none;
+  }
+  .time {
+    position: absolute !important;
+    transform: translateY(-50%) !important;
+    bottom: auto !important;
+    left: auto !important;
+    top: 50%;
+    right: -65px;
+  }
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px){
+  .my-coloda {
+    width: 0 !important;
+    height: 0 !important;
+    background: #fff;
+  }
+  .time {
+    transform: translateX(520%) !important;
+  }
+  .balance {
+    margin-left: -2px;
+  }
+  .choose-bet .bet-amount {
+    width: 70px !important;
+  }
 }

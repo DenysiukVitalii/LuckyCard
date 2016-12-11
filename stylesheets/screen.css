@@ -73,6 +73,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .photo-player {
   width: 75px;
   height: 75px;
+  border: 1px solid transparent;
+  border-radius: 50%;
 }
 
 .card-player {
@@ -83,6 +85,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 10px;
   border: 3px solid #6848a8;
   background: #DDE3FF;
+  margin: 0;
 }
 
 .info-player {
@@ -101,6 +104,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 .card-bet {
+  margin: 0;
   margin-top: 20px;
   font-family: RobotoL;
   font-size: 18px;
@@ -170,4 +174,95 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .input-group {
   width: 80%;
   margin-left: 10%;
+}
+
+.input-group-addon {
+  background: #C2D69B;
+}
+
+.my-main-table {
+  border: 3px solid #6848a8;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+#r-card-2 {
+  margin-left: 70px;
+}
+
+.coloda-time {
+  margin: 10px;
+  margin-left: 15px;
+}
+
+.my-coloda {
+  height: 215px;
+  width: 154px;
+  margin: 0;
+  background: url(../static/img/clubs-card.jpg) -696px -455px no-repeat;
+}
+
+.random-card {
+  position: relative;
+  background: url(../static/img/clubs-card.jpg) 0 0;
+  width: 154px;
+  height: 214px;
+  margin: 10px;
+  margin-left: 100px;
+}
+
+.random-card span {
+  position: absolute;
+  font-family: RobotoL;
+}
+
+.diller {
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#r-card-1 .win {
+  top: 42%;
+  left: -90px;
+}
+
+#r-card-1 .coef {
+  top: 52%;
+  left: -75px;
+}
+
+#r-card-2 .win {
+  top: 42%;
+  right: -90px;
+}
+
+#r-card-2 .coef {
+  top: 52%;
+  right: -75px;
+}
+
+.battle {
+  top: 42%;
+  right: -45px;
+}
+
+#r-card-1 .coef-battle {
+  top: 52%;
+  right: -54px;
+}
+
+.coloda-time {
+  margin-left: 120px;
+}
+
+.my-coloda {
+  position: relative;
+}
+
+.time {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
