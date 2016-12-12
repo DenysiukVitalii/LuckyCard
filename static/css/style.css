@@ -74,6 +74,7 @@
   color: #6848a8;
   transition: .2s;
   font-family: RobotoL;
+  cursor: pointer;
 }
 
 #menu i {
@@ -82,27 +83,16 @@
 }
 
 #footer {
-  position: relative;
   background: #B8CCE4;
   padding: 15px 0;
   height: 70px;
+  font-family: RobotoL;
 }
 .links {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   margin-bottom: 10px;
-}
-#footer .res {
-  position: absolute;
-  left: 50%;
-  bottom: 10px;
-  transform: translateX(-45%);
-  font-family: RobotoL;
 }
 .links a {
   color: #1F497D;
-  font-family: RobotoL;
 }
 
 .links li {
@@ -114,7 +104,48 @@
   margin-right: 5px;
 }
 
-@media screen and (min-width: 992px) and (max-width:1130px) {
+.modal-header {
+  background: #a8c9ff;
+}
+
+.modal-footer {
+  background: #f2f2f2;
+}
+
+
+.ent>button {
+  width:100px;
+}
+.modal {
+  font-family: RobotoL;
+}
+.modal .form-group input {
+    margin-top: 10px;
+}
+.modal h4 {
+  font-family: RobotoM;
+  text-transform: uppercase;
+}
+.form-balance {
+  font-size: 22px;
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+  .my-coloda {
+    width: 0 !important;
+    height: 0 !important;
+    background: #fff;
+  }
+  .time {
+    transform: translateX(520%) !important;
+  }
+  .balance {
+    margin-left: -2px;
+  }
+  .choose-bet .bet-amount {
+    width: 70px !important;
+  }
   #menu li a {
     padding: 5px 17px;
   }
@@ -153,9 +184,6 @@
       transform: translateY(-100%);
     }
 
-}
-
-@media screen and (max-width: 992px){
   #main {
     margin: 0 20px;
   }
@@ -216,21 +244,8 @@
     right: -65px;
   }
 
-}
+  #footer {
+    font-size: 14px;
+  }
 
-@media screen and (min-width: 993px) and (max-width: 1200px){
-  .my-coloda {
-    width: 0 !important;
-    height: 0 !important;
-    background: #fff;
-  }
-  .time {
-    transform: translateX(520%) !important;
-  }
-  .balance {
-    margin-left: -2px;
-  }
-  .choose-bet .bet-amount {
-    width: 70px !important;
-  }
 }

@@ -29,9 +29,9 @@
           <ul id="menu">
             <li><a href="#">Правила</a></li>
             <li><a href="#">Статистика</a></li>
-            <li><a href="#">Баланс</a></li>
-            <li><a href="#">Войти</a></li>
-            <li><a href="#">Регистрация</a></li>
+            <li><a data-toggle="modal" data-target="#balance">Баланс</a></li>
+            <li><a data-toggle="modal" data-target="#enter">Войти</a></li>
+            <li><a data-toggle="modal" data-target="#register">Регистрация</a></li>
           </ul>
         </div>
       </div>
@@ -41,7 +41,7 @@
   <section id="main">
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-12">
           <div class="row">
             <div class="col-md-12 card-player">
               <img class="photo-player" src="static/img/Batman.jpg"></img>
@@ -85,7 +85,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-9 col-sm-12">
           <div class="row my-main-table">
                 <div class="col-md-4 random-card" id="r-card-1">
                   <span class="win">Победа 1</span>
@@ -117,13 +117,159 @@
   </section>
 
   <section id="footer">
-    <ul class="links">
-      <li><a href="#">Связаться с нами</a></li>
-      <li><a href="#">О проекте</a></li>
-    </ul>
-    <span class="res">
-      LuckyCard © 2016
-    </span>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <ul class="links">
+            <li><a href="#">Связаться с нами</a></li>
+            <li><a href="#">О проекте</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <span class="res">
+            LuckyCard © 2016
+          </span>
+        </div>
+      </div>
+    </div>
+
   </section>
+
+  <div class="modal fade" id="register">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content ">
+          <div class="modal-header">
+
+          <button class="close" type="button" data-dismiss="modal">
+              <i class="fa fa-close"></i>
+            </button>
+
+            <h4 class="modal-title">Регистрация</h4>
+
+          </div>
+
+          <div class="modal-body">
+            <form role="form">
+              <div class="form-group">
+                <label for="exampleInputNik1">Никнейм</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Введіть Ваш нікнейм">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Введіть email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Придумайте пароль</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Повторите пароль</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Запомнить
+                </label>
+              </div>
+            </form>
+            <div class="text-center">
+            <button type="button" class="btn btn-primary">
+              Зарегистрироваться
+            </button>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="enter">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content ">
+            <div class="modal-header">
+
+            <button class="close" type="button" data-dismiss="modal">
+                <i class="fa fa-close"></i>
+              </button>
+                <h4 class="modal-title">Вход</h4>
+
+            </div>
+
+            <div class="modal-body">
+              <form role="form">
+
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Введіть email">
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Пароль</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Запомнить
+                  </label>
+                </div>
+              </form>
+              <div class="ent text-center">
+              <button type="button" class="btn btn-primary">
+                Войти
+              </button>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="balance">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content ">
+              <div class="modal-header">
+
+              <button class="close" type="button" data-dismiss="modal">
+                  <i class="fa fa-close"></i>
+                </button>
+                  <h4 class="modal-title">Баланс</h4>
+
+              </div>
+
+              <div class="modal-body">
+                <form role="form">
+
+                  <div class="form-group text-center form-balance">
+                    <label>Ваш баланс: $</label>
+                    <span class="money">945.2</span>
+                  </div>
+                  <div class="form-group text-center">
+                    <label>При пополнении счета, баланс увеличивается на $1000.</label>
+                    <label>Данную операцию можно проводить 1 раз в день.</label>
+                  </div>
+                </form>
+                <div class="ent text-center">
+                <button type="button" class="btn btn-primary">
+                  Пополнить
+                </button>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
 </body>
 </html>
