@@ -27,7 +27,7 @@
         <div class="col-md-8">
           <a href="#" id="mobmenu"><i class="fa fa-bars fa-2x"></i></a>
           <ul id="menu">
-            <li><a href="#">Правила</a></li>
+            <li><a data-toggle="modal" data-target="#rules">Правила</a></li>
             <li><a href="#">Статистика</a></li>
             <li><a data-toggle="modal" data-target="#balance">Баланс</a></li>
             <li><a data-toggle="modal" data-target="#enter">Войти</a></li>
@@ -103,13 +103,125 @@
 
               <div class="col-md-2 coloda-time">
                 <div class="my-coloda">
-                  <span class="time">0:17</span>
+                  <span class="time" id="timer"></span>
                 </div>
               </div>
           </div>
-          <div class="row">
-            <div class="col-md-12">
-            </div>
+          <div class="row tabs-bet">
+              <ul class="tabs">
+                <li>
+                  <label>Выберите тип ставки</label>
+                </li>
+                <li>
+                  <input type="radio" name="tabs" id="tab-1" checked>
+                  <label for="tab-1">Основные</label>
+                  <div class="tab-content">
+                    <div class="bet">
+                      <span>Дилер 1 выигрывает</span>
+                      <span class="coef-bet-tab">1.82</span>
+                    </div>
+                    <div class="bet">
+                      <span>Дилер 2 выигрывает</span>
+                      <span class="coef-bet-tab">1.77</span>
+                    </div>
+                    <div class="bet">
+                      <span>Ничья</span>
+                      <span class="coef-bet-tab">5.45</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <input type="radio" name="tabs" id="tab-2">
+                  <label for="tab-2">По цвету</label>
+                  <div class="tab-content">
+                    <div class="bet">
+                      <span>Карта Дилера 1 будет красной</span>
+                      <span class="coef-bet-tab">1.82</span>
+                    </div>
+                    <div class="bet">
+                      <span>Карта Дилера 1 будет черной</span>
+                      <span class="coef-bet-tab">1.77</span>
+                    </div>
+                    <div class="bet">
+                      <span>Карта Дилера 2 будет красной</span>
+                      <span class="coef-bet-tab">5.45</span>
+                    </div>
+                    <div class="bet">
+                      <span>Карта Дилера 2 будет черной</span>
+                      <span class="coef-bet-tab">5.45</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <input type="radio" name="tabs" id="tab-3">
+                  <label for="tab-3">По масти</label>
+                  <div class="tab-content">
+                    <div class="bet">
+                      <span>Карта Дилера 1 будет трефы</span>
+                      <span class="coef-bet-tab">1.82</span>
+                    </div>
+                    <div class="bet">
+                      <span>Карта Дилера 1 будет червы</span>
+                      <span class="coef-bet-tab">1.77</span>
+                    </div>
+                    <div class="bet">
+                      <span>Карта Дилера 1 будет бубны</span>
+                      <span class="coef-bet-tab">5.45</span>
+                    </div>
+                    <div class="bet">
+                      <span>Карта Дилера 1 будет пики</span>
+                      <span class="coef-bet-tab">5.45</span>
+                    </div>
+                    <div class="bet">
+                      <span>Карта Дилера 2 будет трефы</span>
+                      <span class="coef-bet-tab">1.82</span>
+                    </div>
+                    <div class="bet">
+                      <span>Карта Дилера 2 будет червы</span>
+                      <span class="coef-bet-tab">1.77</span>
+                    </div>
+                    <div class="bet">
+                      <span>Карта Дилера 2 будет бубны</span>
+                      <span class="coef-bet-tab">5.45</span>
+                    </div>
+                    <div class="bet">
+                      <span>Карта Дилера 2 будет пики</span>
+                      <span class="coef-bet-tab">5.45</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <input type="radio" name="tabs" id="tab-4">
+                  <label for="tab-4">По значению</label>
+                  <div class="tab-content">
+                    <div class="bet">
+                      <span>Карта Дилера 1 будет 8</span>
+                      <span class="coef-bet-tab">1.82</span>
+                    </div>
+                    <div class="bet">
+                      <span>Карта Дилера 1 будет выше 8</span>
+                      <span class="coef-bet-tab">1.82</span>
+                    </div>
+                    <div class="bet">
+                      <span>Карта Дилера 1 будет ниже 8</span>
+                      <span class="coef-bet-tab">1.77</span>
+                    </div>
+                    <div class="bet">
+                      <span>Карта Дилера 2 будет 8</span>
+                      <span class="coef-bet-tab">1.82</span>
+                    </div>
+                    <div class="bet">
+                      <span>Карта Дилера 2 будет выше 8</span>
+                      <span class="coef-bet-tab">5.45</span>
+                    </div>
+                    <div class="bet">
+                      <span>Карта Дилера 2 будет ниже 8</span>
+                      <span class="coef-bet-tab">5.45</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+          </div>
           </div>
         </div>
       </div>
@@ -136,6 +248,34 @@
     </div>
 
   </section>
+
+  <div class="modal fade" id="rules">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content ">
+          <div class="modal-header">
+
+          <button class="close" type="button" data-dismiss="modal">
+              <i class="fa fa-close"></i>
+            </button>
+
+            <h4 class="modal-title">Правила</h4>
+
+          </div>
+
+          <div class="modal-body">
+            <p>Правила нашей игры очень просты.</p><br>
+            <p>Во-первых, в игре присутствуют два дилера, за которыми собственно вы и будете наблюдать.</p><br>
+            <p>Во-вторых, суть игры заключается в том, что бы просто предсказать, какая карта выпадет в того или иного дилера.</p><br>
+            <p>Есть 3 вида ставок на карту: а) цвет, б) масть, в) значение. Так же вы можете поставить просто на победу одного из дилеров.</p><br>
+            <p>Значит правила просты: вы ставите на какое-то событие и если угадываете, выигрываете - если не угадываете, то проигрываете.</p><br>
+            <p>Игру вы начинаете с определенным стартовым балансом. И конец же игры наступает в двух случаях: если игроку уже надоело попросту играть, или же если баланс игрока стал $0.</p><br>
+            <p class="text-center">Удачи в ставках!</p>
+          </div>
+
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
 
   <div class="modal fade" id="register">
       <div class="modal-dialog modal-md">

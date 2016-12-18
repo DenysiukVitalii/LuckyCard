@@ -130,8 +130,91 @@
   font-size: 22px;
 }
 
+.tabs-bet {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.tabs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  font-family: RobotoM;
+  display: block;
+  height: 147px;
+}
+.tabs li {
+  float: left;
+}
+.tabs li:first-child {
+  background-color: #6848a8;
+  color: #fff;
+}
+.tabs li > input {
+  display: none;
+}
+.tabs li > label {
+  display: inline-block;
+  border: 3px solid #6848a8;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  height: 30px;
+  padding: 5px 20px;
+  cursor: pointer;
+  line-height: 15px;
+}
+.tabs li:last-child > label {
+  border-right-width: 3px;
+}
+.tabs .tab-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    border: 3px solid #6848a8;
+    border-bottom: none;
+}
+/*.tabs:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 300px;
+}*/
+.tabs li > input:checked + label {
+  background-color: #e7d3ff;
+}
+
+.tabs li > input:checked ~ .tab-content {
+  display: block;
+  width: 100%;
+}
+.bet {
+  border-bottom: 3px solid #6848a8;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.bet:focus {
+  background-color: #e7d3ff;
+}
+.bet:hover {
+  background-color: #e7d3ff;
+}
+.coef-bet-tab {
+  position: absolute;
+  right: 5%;
+}
+
+.input-group input,.input-group-addon  {
+  font-size: 20px;
+  font-family: RobotoM;
+}
+
 
 @media screen and (min-width: 992px) and (max-width: 1200px){
+  .tabs li > label {
+    padding: 5px 10px;
+  }
   .my-coloda {
     width: 0 !important;
     height: 0 !important;
@@ -243,7 +326,16 @@
     top: 50%;
     right: -65px;
   }
-
+  .tabs-bet {
+    margin-left: 0;
+  }
+  .tabs li  {
+    float: none;
+    z-index: 3;
+  }
+  .bet {
+    z-index: 1;
+  }
   #footer {
     font-size: 14px;
   }
